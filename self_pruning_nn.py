@@ -8,11 +8,6 @@ The core idea:
   - An L1 penalty (lambda * mean(gates)) is added to the cross-entropy loss,
     pushing gate values toward 0, effectively pruning those weights.
   - After training, weights with gate < 0.5 are considered pruned.
-
-Usage:
-    python self_pruning_net_commented.py                 # full run (30 epochs)
-    python self_pruning_net_commented.py --quick         # 3-epoch smoke test
-    python self_pruning_net_commented.py --epochs 50     # custom epoch count
 """
 
 import math
